@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<title>Buttons</title>
+</head>
+<body >
+
+    <h1 class="center red-text text-lighten-2">Buttons</h1>
+     <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>
+            There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.
+        </p>
+        <a href="" class="btn waves-effect wave-light">Button</a> 
+        <a href="" class="btn waves-effect wave-light lime lighten-2">
+            <i class="material-icons left">cloud</i>
+            Button
+        </a> 
+        <a href="" class="btn waves-effect wave-light green">
+            <i class="material-icons right">cloud</i>
+            Button
+        </a>
+        
+        <h3 class="lime-text text-darken-2">Raised</h3>
+        <a class="btn-floating btn-large lime waves-effect waves-light">
+            <i class="material-icons black-text">add</i>
+        </a>
+        <p class="flow-text">Floating Action Button</p>
+        <p>See the documentation on <a href="https://materializecss.com/l" target="_blank">This Page</a></p>
+
+        <h3 class="red-text text-lighten-2">Flat</h3>
+        <p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
+        <a href="" class="waves-effect waves-teal btn-flat">Button</a>
+
+        <h3 class="red-text text-lighten-2">Submit Button</h3>
+        <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit
+        </p>
+        <a class="btn waves-effect waves-light light-blue">Submit
+            <i class="material-icons right"></i>
+        </a>
+
+        <a class="btn waves-effect waves-light light-blue">Submit
+            <i class="material-icons right">send</i>
+        </a>
+
+        <a class="btn waves-effect waves-light light-blue">Submit
+            <i class="material-icons left">send</i>
+        </a>
+
+        <h3 class="red-text text-lighten-2">Disabled</h3>
+        <p>This style can be applied to all button types</p>
+        <a class="btn small waves-effect  waves-light light-blue disabled">Submit
+            <i class="material-icons left">send</i>
+        </a>
+        <h1 class="red-text text-lighten-2 center"> Floating Action Button</h1>
+        <div class="divider"></div>
+        <br>
+        <div class="container">
+            <P>If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page.</P>
+            <div class="fixed-action-btn">
+                <a href="" class="btn-floating btn-large cyan">
+                <i class="material-icons">
+                    mode_edit
+                </i>    
+                </a>
+                <ul>
+                    <li>
+                        <a href="" class="btn-floating lime lighten-1">
+                            <i class="material-icons" >
+                                check</i>      
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-floating lime lighten-2">
+                            <i class="material-icons " >
+                                send</i>      
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-floating lime lighten-3">
+                            <i class="material-icons " >
+                                insert_chart</i>      
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $('.fixed-action-btn').floatingActionButton({
+        direction: 'left',
+        hoverEnabled: true,
+        
+       });
+    });
+</script>    
+</body>
+</html>

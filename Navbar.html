@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<title>Navbar and Sidenav</title>
+</head>
+<body>
+<div class="navbar-fixed">
+    <nav class="lime lighten-1">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo black-text">Ariane Nav</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="black-text material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active">
+                    <a href="navbar-sidenav.html" class="black-text">Home</a>
+                    </li>
+                    <li>
+                    <a href="" class="black-text">About</a>
+                    </li> 
+                    <li>
+                    <a href="08569" class="black-text">Contact Us</a>
+                    </li>
+                    <li>
+                    <a href="" class="dropdown-trigger" data-target="dropdown-menu">
+                    <i class="black-text material-icons right">arrow_drop_down_circle</i>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul id="dropdown-menu" class="dropdown-content lime darken-2">
+        <li>
+        <a href="https://react.dev/" class="black-text" target="_blank">ONE<i class=""></i></a>
+        </li>
+        <li>
+         <a href="https://nodejs.org/en" class="black-text" target="_blank">TWO<i class=""></i></a>
+        </li>
+        <li>
+        <a href="" class="black-text" target="_blank">THREE<i class=""></i></a>
+        </li>
+        </ul>
+    <li class="active">
+    <a href="navbar-sidenav.html">Home</a>
+    </li>
+    <li>
+    <a href="">About</a>
+    </li>
+</div>
+<ul id="slide-out" class="sidenav lime lighten-4">
+<li>
+<div class="user-view">
+    <div class="background">
+    <img src="image/aa1.jpeg" alt="">
+    </div>
+    <a href="">
+    <img src="image/aa.jpeg" alt="" class="circle">
+    </a>
+    <a href="">
+    <span class="black-text lime lighten-2 name center-align">Ariane Carino</span>
+    </a>
+    <a href="">
+    <span class="black-text lime lighten-2 name center-align">arianecarino72@gmail.com</span>
+    </a>
+</li>
+   <li class="active">
+    <a href="" class="lime lighten-1">Home</a>
+    </li>
+    <li>
+    <a href="" class="lime lighten-2">About</a>
+    </li>
+    <li>
+    <a href="https://materializecss.com/icons.html" class="lime lighten-3" target="_blank">Material Icons</a>
+    </li>
+</div>
+</ul>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.dropdown-trigger').dropdown();
+        $('.sidenav').sidenav({
+            induration: 1500,
+            outduration: 1900
+        });
+        
+    });
+</script>
+</body>
+</html>
